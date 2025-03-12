@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            2D Transforms
+        </title>
+        <style>
+            div.translate{
+                width: 200px;
+                height: 100px;
+                background-color: bisque;
+                border: 1px solid black;
+                transform: translate(30px, 20px);
+            }
+            div.rotate{
+                width: 200px;
+                height: 100px;
+                background-color: bisque;
+                border: 1px solid black;
+                transform: rotate(45deg);
+            }
+            div.scale{
+                width: 20px;
+                height: 30px;
+                background-color: bisque;
+                border: 1px solid black;
+                transform: scale(2,3);
+            }
+            div.scale1{
+                width: 20px;
+                height: 30px;
+                background-color: bisque;
+                border: 1px solid black;
+                transform: scaleX(2);
+            }
+            div.scale2{
+                width: 20px;
+                height: 30px;
+                background-color: bisque;
+                border: 1px solid black;
+                transform: scaleY(2);
+            }
+            div.skew{
+                width: 200px;
+                height: 100px;
+                background-color: bisque;
+                border: 1px solid black;
+                transform: skew(20deg);
+            }
+            div.skew1{
+                width: 200px;
+                height: 100px;
+                background-color: bisque;
+                border: 1px solid black;
+                transform: skewX(20deg, 10deg);
+            }
+            div.skew2{
+                width: 200px;
+                height: 100px;
+                background-color: bisque;
+                border: 1px solid black;
+                transform: skewY(20deg);
+            }
+            div.matrix{
+                width: 200px;
+                height: 100px;
+                background-color: bisque;
+                border: 1px solid black;
+                transform: matrix(1,-0.3,0,1,0,0);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Testing 2D Transforms by Nischal</h1>
+        <h2>The translate() Method</h2>
+        <div class="translate">
+            Moved by 50 pixels to the right, and 100 pixels down from the elements current position.
+        </div>
+        <div class="rotate">
+            Rotated by 45 degree
+        </div>
+        <div class="scale">
+            Scale by (2,3)
+        </div>
+        <div class="scale1">
+            Scale by 2 in X
+        </div>
+        <div class="scale2">
+            Scale by 2 in Y
+        </div>
+        <div class="skew">
+            Skew
+        </div>
+        <div class="skew1">
+            SkewX
+        </div>
+        <div class="skew2">
+            SkewY
+        </div>
+        <div class="matrix">
+            Matrix
+        </div>
+    </body>
+</html>
