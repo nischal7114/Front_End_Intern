@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            CSS Text Effects
+        </title>
+        <style>
+            p.t1{
+                white-space: nowrap;
+                width: 150px;
+                border: 1px solid;
+                overflow: hidden;
+                text-overflow: clip;
+            }
+            p.t2{
+                white-space: nowrap;
+                width: 150px;
+                border: 1px solid;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            p.t3{
+                width: 150px;
+                border: 1px solid;
+                word-wrap: break-word;
+            }
+            p.t4{
+                width: 150px;
+                border: 1px solid;
+                word-break:break-all;
+            }
+            p.t5{
+                width: 150px;
+                border: 1px solid;
+                word-break:keep-all;
+            }
+            p.t6{
+                width: 150px;
+                border: 1px solid;
+                writing-mode:horizontal-tb;
+            }
+            p.t7{
+                width: 150px;
+                border: 1px solid;
+                writing-mode:vertical-rl;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Testing text-overflow property by Nischal</h1>
+        <h2>1. text-overflow</h2>
+        <h3>• clip</h3>
+        <p class="t1">A very long message that will not fit in the box</p>
+        <h3>• ellipsis</h3>
+        <p class="t2">A very long message that will not fit in the box</p>
+        <h2>2. word-wrap</h2>
+        <p class="t3">A very long message
+        that will not fit in the box</p>
+        <h2>3.1 word-break: break-all</h2>
+        <p class="t4">A very long messag
+        that will not fit in the box</p>
+        <h2>3.2 word-break: keep-all</h2>
+        <p class="t5">A very long messag
+        that will not fit in the box</p>
+        <h2>4.1 writing-mode: horizontal-tb</h2>
+        <p class="t6">A very long messag
+        that will not fit in the box</p>
+        <h2>4.2 writing-mode: vertical-rl</h2>
+        <p class="t7">A very long messag
+        that will not fit in the box</p>
+    </body>
+</html>
