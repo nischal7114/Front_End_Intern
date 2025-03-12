@@ -1,0 +1,106 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>
+            Box Shadow
+        </title>
+        <style>
+            #b1{
+                width: 300px;
+                height: 100px;
+                padding: 15px;
+                background-color: cornflowerblue;
+                box-shadow: 10px 10px;
+            }
+            #b2{
+                width: 300px;
+                height: 100px;
+                padding: 15px;
+                background-color: cornflowerblue;
+                box-shadow: 10px 10px coral;
+            }
+            #b3{
+                width: 300px;
+                height: 100px;
+                padding: 15px;
+                background-color: cornflowerblue;
+                box-shadow: 10px 10px 5px coral;
+            }
+            #b4{
+                width: 300px;
+                height: 100px;
+                padding: 15px;
+                background-color: cornflowerblue;
+                box-shadow: 10px 10px 5px 12px coral;
+            }
+            #b5{
+                width: 300px;
+                height: 100px;
+                padding: 15px;
+                background-color: coral;
+                box-shadow: 10px 10px 5px cornflowerblue inset;
+            }
+            #b6{
+                width: 300px;
+                height: 100px;
+                padding: 15px;
+                background-color: cornflowerblue;
+                box-shadow: 5px 5px coral, 10px 10px red, 15px 15px greenyellow;
+            }
+            div.card{
+                width: 250px;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                text-align: center;
+            }
+            div.header{
+                background-color:black;
+                color: yellow;
+                padding: 10px;
+                font-size: 40px;
+            }
+            div.container{
+                background-color: chocolate;
+                padding: 10px;
+                color: black;
+            }
+            div.polaroid{
+                width: 250px;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Testing box-shadow property by Nischal</h1>
+        <div id="b1">
+            An element with a box-shadow. Here, the default color of the shadow is the current text-color.
+        </div><br><br>
+        <div id="b2">
+            An element with a coral box-shadow.
+        </div><br><br>
+        <div id="b3">
+            An element with a 5px blurred, coral box-shadow.
+        </div><br><br>
+        <div id="b4">
+            An element with a blurred, coral box-shadow, with a spread radius of 12 px.
+        </div><br><br>
+        <div id="b5">
+            An element with a blurred, cornflowerblue, inset box-shadow.
+        </div><br><br>
+        <div id="b6">
+            An element with multiple shadows.
+        </div><br><br>
+        <div class="card">
+            <div class="header">
+                <h3>Hey, there!</h3>
+            </div>
+            <div class="container">
+                <p>It's me! Nischal Shrestha.</p>
+            </div>
+        </div><br><br>
+        <div class="polaroid">
+            <img src="Pictures/luffy.png" alt="Luffy" style="width:100%">
+            <div class="container"><p>Luffy</p></div>
+        </div>
+    </body>
+</html>
