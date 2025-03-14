@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Animations</title>
+        <style>
+            #div1{
+                width: 200px;
+                height: 100px;
+                background-color:bisque;
+                animation-name: box;
+                animation-duration: 4s;
+                animation-delay: 2s;
+                position: relative;
+            }
+            #div2{
+                width: 300px;
+                height: 150px;
+                background-color:bisque;
+                animation-name: move;
+                animation-duration: 6s;
+                position: relative;
+                animation-iteration-count: 2;
+            }
+            #div3 {
+                width: 100px;
+                height: 50px;
+                background-color: red;
+                font-weight: bold;
+                position: relative;
+                animation-name: curve;
+                animation-fill-mode: forwards;
+                animation-timing-function: linear;
+            }
+            #div4{
+                width: 100px;
+                height: 50px;
+                background-color: red;
+                font-weight: bold;
+                position: relative;
+                animation-name: curve;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease;
+            }
+            #div5 {    
+                width: 100px;            
+                height: 50px;
+                background-color: red;
+                font-weight: bold;
+                position: relative;
+                animation-name: curve;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in;
+            }
+            #div6 {
+                width: 100px;
+                height: 50px;
+                background-color: red;
+                font-weight: bold;
+                position: relative;
+                animation-name: curve;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-out;
+            }
+            #div7 {
+                width: 100px;
+                height: 50px;
+                background-color: red;
+                font-weight: bold;
+                position: relative;
+                animation-name: curve;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+            }
+            @keyframes box {
+                from{background-color: bisque;}
+                to{background-color: chocolate;}
+            }
+            @keyframes move {
+                0% {background-color: brown; left:0px; top:0px;}
+                25%{background-color: cornflowerblue; left:100px; top:0px;}
+                50%{background-color: aqua; left:100px; top:100px;}
+                75%{background-color: crimson; left:0px; top:100px;}
+                100%{background-color:darkolivegreen; left:0px;top:0px;}
+            }
+            @keyframes curve{
+                from{left:0px;}
+                to{left:300px;}
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Testing CSS Animations by Nischal</h1>
+        <div id="div1">Testing @keyframes rule Phase I</div>
+        <br><hr><br>
+        <div id="div2">Testing @keyframe rule Phase II</div>
+        <br><hr><br>
+        <div id="div3">Linear</div>
+        <br><hr><br>
+        <div id="div4">Ease</div>
+        <br><hr><br>
+        <div id="div5">Ease-In</div>
+        <br><hr><br>
+        <div id="div6">Ease-Out</div>
+        <br><hr><br>
+        <div id="div7">Ease-In-Out</div>
+    </body>
+</html>
