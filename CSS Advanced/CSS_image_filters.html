@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Image Filters</title>
+        <style>
+            div.polaroid{
+                width:202px;
+                float: left;
+                padding: 10px;
+                background-color: rgba(180, 222, 247, 0.822);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                margin-right: 10px;
+            }
+            div.container{
+                text-align: center;
+                padding: 2px 2px;
+            }
+            img{
+                height: 200px;
+            }
+            #img1{
+                filter: blur(2px);
+            }
+            #img2{
+                filter: blur(6px);
+            }
+            #img3{
+                filter: brightness(150%);
+            }
+            #img4{
+                filter: brightness(50%);
+            }
+            #img5{
+                filter: contrast(150%);
+            }
+            #img6{
+                filter: contrast(50%);
+            }
+            #img7{
+                filter: drop-shadow(8px 8px 10px rgb(204, 95, 6));
+            }
+            #img8{
+                filter: drop-shadow(10px 10px 7px rgb(173, 184, 23));
+            }
+            #img9{
+                filter: grayscale(1);
+            }
+            #img10{
+                filter: grayscale(60%);
+            }
+            #img11{
+                filter: grayscale(0.4);
+            }
+            #img12{
+                filter: hue-rotate(200deg);
+            }
+            #img13{
+                filter: hue-rotate(90deg);
+            }
+            #img14{
+                filter: hue-rotate(-90deg);
+            }
+            #img15{
+                filter: invert(0.3);
+            }
+            #img16{
+                filter: invert(70%);
+            }
+            #img17{
+                filter: invert(100%);
+            }
+            #img18{
+                filter: opacity(80%);
+            }
+            #img19{
+                filter: opacity(50%);
+            }
+            #img20{
+                filter: opacity(0.2);
+            }
+            #img21{
+                filter: saturate(0);
+            }
+            #img22{
+                filter: saturate(100%);
+            }
+            #img23{
+                filter: saturate(200%);
+            }
+            #img24{
+                filter: sepia(1);
+            }
+            #img25{
+                filter: sepia(60%);
+            }
+            #img26{
+                filter: sepia(0.4);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Testing Image Filters by Nischal</h1>
+        <div>
+        <h2>CSS blur() Function</h2>
+        <div class="polaroid">
+            <img src="../Pictures/Kendrick.jpg">
+            <div class="container">
+                <p>Original Image</p>
+            </div>
+        </div>
+        <div class="polaroid">
+            <img src="../Pictures/Kendrick.jpg" id="img1">
+            <div class="container">
+                <p>Blur Image 2px</p>
+            </div>
+        </div>
+        <div class="polaroid">
+            <img src="../Pictures/Kendrick.jpg" id="img2">
+            <div class="container">
+                <p>Blur Image 6px</p>
+            </div>
+        </div>
+        </div>
+        <div>
+        <h2>CSS brightness() Function</h2>
+        <div class="polaroid">
+            <img src="../Pictures/Kendrick.jpg">
+            <div class="container">Original Image</div>
+        </div>
+        <div class="polaroid">
+            <img src="../Pictures/Kendrick.jpg" id="img3">
+            <div class="container">Brightness 150%</div>
+        </div>
+        <div class="polaroid">
+            <img src="../Pictures/Kendrick.jpg" id="img4">
+            <div class="container">Brightness 50%</div>
+        </div>
+        </div>
+        <div>
+        <h2>CSS contrast() Function</h2>
+        <div class ="polaroid">
+            <img src="../Pictures/Kendrick.jpg">
+            <div class="container">Original Image</div>
+            </div>
+            <div class ="polaroid">
+            <img src="../Pictures/Kendrick.jpg" id="img5">
+            <div class="container">Contrast 150%</div>
+            </div>
+            <div class="polaroid">
+            <img src="../Pictures/Kendrick.jpg" id="img6">
+            <div class="container">Contrast 50%</div>
+            </div>
+        </div>
+        <div>
+        <h2>CSS drop-shadow() Function</h2>
+        <div class="polaroid">
+            <img src="../Pictures/Kendrick.jpg">
+            <div class="container">Original Image</div>
+            </div>
+            <div class="polaroid">
+            <img src="../Pictures/Kendrick.jpg" id="img7">
+            <div class="container">Drop-Shadow(8px 8px 10px)</div>
+            </div>
+            <div class="polaroid">
+            <img src="../Pictures/Kendrick.jpg" id="img8">
+            <div class ="container">Drop-Shadow (10px 10px 7px)</div>
+            </div>
+        </div>
+        <div>
+        <h2>CSS grayscale() Function</h2>
+        <div class="polaroid">
+            <img src="../Pictures/Kendrick.jpg">
+            <div class="container">Original Image</div>
+        </div>
+            <div class="polaroid">
+            <img src="../Pictures/Kendrick.jpg" id="img9">
+            <div class="container">Grayscale(1)</div>
+            </div>
+            <div class="polaroid">
+            <img src="../Pictures/Kendrick.jpg" id="img10">
+            <div class="container">Grayscale(60%)</div>
+            </div>
+            <div class="polaroid">
+            <img src="../Pictures/Kendrick.jpg" id="img11">
+            <div class="container">Grayscale(0.4)</div>
+            </div>
+        </div>
+        <div>
+        <h2>CSS hue-rotate() Function</h2>
+            <div class="polaroid">
+            <img src="../Pictures/Kendrick.jpg">
+            <div class="container">Original Image</div>
+            </div>
+            <div class="polaroid">
+            <img src="../Pictures/Kendrick.jpg" id="img12">
+            <div class="container">Hue-Rotate(200deg)</div>
+            </div>
+            <div class="polaroid">
+            <img src="../Pictures/Kendrick.jpg" id="img13">
+            <div class="container">Hue-Rotate(90deg)</div>
+            </div>
+            <div class="polaroid">
+            <img src="../Pictures/Kendrick.jpg" id="img14">
+            <div class="container">Hue-Rotate(-90deg)</div>
+            </div>
+        </div>  
+        <h2>CSS invert() Function</h2>
+        <div>
+            <img src="../Pictures/Kendrick.jpg">
+            <img src="../Pictures/Kendrick.jpg" id="img15">
+            <img src="../Pictures/Kendrick.jpg" id="img16">
+            <img src="../Pictures/Kendrick.jpg" id="img17">
+        </div> 
+        <h2>CSS opacity() Function</h2>
+        <div>
+            <img src="../Pictures/Kendrick.jpg">
+            <img src="../Pictures/Kendrick.jpg" id="img18">
+            <img src="../Pictures/Kendrick.jpg" id="img19">
+            <img src="../Pictures/Kendrick.jpg" id="img20">
+        </div>   
+        <h2>CSS saturate() Function</h2>
+        <div>
+            <img src="../Pictures/Kendrick.jpg">
+            <img src="../Pictures/Kendrick.jpg" id="img21">
+            <img src="../Pictures/Kendrick.jpg" id="img22">
+            <img src="../Pictures/Kendrick.jpg" id="img23">
+        </div>        
+        <h2>CSS sepia() Function</h2>
+        <div>
+            <img src="../Pictures/Kendrick.jpg">
+            <img src="../Pictures/Kendrick.jpg" id="img24">
+            <img src="../Pictures/Kendrick.jpg" id="img25">
+            <img src="../Pictures/Kendrick.jpg" id="img26">
+        </div>  
+    </body>
+</html>
