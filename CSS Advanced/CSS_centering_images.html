@@ -1,0 +1,40 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>CSS Centering Images</title>
+        <style>
+            #img{
+                display: block;
+                margin: auto;
+            }
+            #div1{
+                display: flex;
+                justify-content: center;
+            }
+            #div2{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 600px;
+                border: 1px solid black;
+            }
+            #img2{
+                width: 50%;
+                height: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Centering an Image horizontally</h1>
+        <h3>Using margin:auto</h3>
+        <img src="../Pictures/luffy.png" alt="Luffy" style="width: 50%;" id="img">
+        <h3>Using display:flex</h3>
+    <div id="div1">
+        <img src="../Pictures/zoro.png" alt="Zoro" style="width: 50%;">
+    </div>
+    <h1>Centering an Image vertically</h1>
+    <div id="div2">
+        <img src="../Pictures/sanji.png" alt="Luffy" style="width: 50%;" id="img2">
+    </div>
+    </body>
+</html>
