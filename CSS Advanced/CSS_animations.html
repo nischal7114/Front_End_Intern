@@ -1,18 +1,42 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>CSS Animations</title>
+        <title>CSS animations</title>
         <style>
+            div{
+                width: 100px;
+                height: 50px;
+                background-color: red;
+                font-weight: bold;
+                position: relative;
+                animation: curve 5s;
+                animation-fill-mode: forwards;
+            }
             #div1{
+                animation-timing-function: linear;
+            }
+            #div2{
+                animation-timing-function: ease;
+            }
+            #div3{
+                animation-timing-function: ease-in;
+            }
+            #div4{
+                animation-timing-function: ease-out;
+            }
+            #div5{
+                animation-timing-function: ease-in-out;
+            }
+            #div6{
                 width: 200px;
                 height: 100px;
                 background-color:bisque;
                 animation-name: box;
-                animation-duration: 4s;
-                animation-delay: 2s;
+                animation-duration: 2s;
+                animation-delay: 1s;
                 position: relative;
             }
-            #div2{
+            #div7{
                 width: 300px;
                 height: 150px;
                 background-color:bisque;
@@ -21,55 +45,9 @@
                 position: relative;
                 animation-iteration-count: 2;
             }
-            #div3 {
-                width: 100px;
-                height: 50px;
-                background-color: red;
-                font-weight: bold;
-                position: relative;
-                animation-name: curve;
-                animation-fill-mode: forwards;
-                animation-timing-function: linear;
-            }
-            #div4{
-                width: 100px;
-                height: 50px;
-                background-color: red;
-                font-weight: bold;
-                position: relative;
-                animation-name: curve;
-                animation-fill-mode: forwards;
-                animation-timing-function: ease;
-            }
-            #div5 {    
-                width: 100px;            
-                height: 50px;
-                background-color: red;
-                font-weight: bold;
-                position: relative;
-                animation-name: curve;
-                animation-fill-mode: forwards;
-                animation-timing-function: ease-in;
-            }
-            #div6 {
-                width: 100px;
-                height: 50px;
-                background-color: red;
-                font-weight: bold;
-                position: relative;
-                animation-name: curve;
-                animation-fill-mode: forwards;
-                animation-timing-function: ease-out;
-            }
-            #div7 {
-                width: 100px;
-                height: 50px;
-                background-color: red;
-                font-weight: bold;
-                position: relative;
-                animation-name: curve;
-                animation-fill-mode: forwards;
-                animation-timing-function: ease-in-out;
+            @keyframes curve{
+                from {left: 0px;}
+                to {left: 300px;}
             }
             @keyframes box {
                 from{background-color: bisque;}
@@ -82,26 +60,16 @@
                 75%{background-color: crimson; left:0px; top:100px;}
                 100%{background-color:darkolivegreen; left:0px;top:0px;}
             }
-            @keyframes curve{
-                from{left:0px;}
-                to{left:300px;}
-            }
         </style>
     </head>
     <body>
         <h1>Testing CSS Animations by Nischal</h1>
-        <div id="div1">Testing @keyframes rule Phase I</div>
-        <br><hr><br>
-        <div id="div2">Testing @keyframe rule Phase II</div>
-        <br><hr><br>
-        <div id="div3">Linear</div>
-        <br><hr><br>
-        <div id="div4">Ease</div>
-        <br><hr><br>
-        <div id="div5">Ease-In</div>
-        <br><hr><br>
-        <div id="div6">Ease-Out</div>
-        <br><hr><br>
-        <div id="div7">Ease-In-Out</div>
+        <div id="div1">Linear</div>
+        <div id="div2">Ease</div>
+        <div id="div3">Ease-In</div>
+        <div id="div4">Ease-Out</div>
+        <div id="div5">Ease-In-Out</div>
+        <div id="div6">Testing @keyframe rule Phase I</div>
+        <div id="div7">Testing @keyframe rule Phase II</div>
     </body>
 </html>
