@@ -3,13 +3,17 @@
     <head>
         <title>CSS Image Filters</title>
         <style>
+            div{
+                float: left;
+            }
             div.polaroid{
                 width:202px;
                 float: left;
                 padding: 10px;
                 background-color: rgba(180, 222, 247, 0.822);
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                margin-right: 10px;
+                margin-right: 20px;
+                margin-bottom: 20px;
             }
             div.container{
                 text-align: center;
@@ -204,34 +208,81 @@
             <div class="container">Hue-Rotate(-90deg)</div>
             </div>
         </div>  
-        <!-- Need to edit polaroid card section from here -->
+        <div>
         <h2>CSS invert() Function</h2>
-        <div>
+            <div class="polaroid">
             <img src="../Pictures/Kendrick.jpg">
+            <div class="container">Original Image</div>
+            </div>
+            <div class="polaroid">
             <img src="../Pictures/Kendrick.jpg" id="img15">
+            <div class="container">Invert(0.3)</div>
+            </div>
+            <div class="polaroid">
             <img src="../Pictures/Kendrick.jpg" id="img16">
+            <div class="container">invert(70%)</div>
+            </div>
+            <div class="polaroid">
             <img src="../Pictures/Kendrick.jpg" id="img17">
+            <div class="container">invert(100%)</div>
+            </div>
         </div> 
+        <div>
         <h2>CSS opacity() Function</h2>
-        <div>
+            <div class="polaroid">
             <img src="../Pictures/Kendrick.jpg">
+            <div class="container">Original Image</div>
+            </div>
+            <div class="polaroid">
             <img src="../Pictures/Kendrick.jpg" id="img18">
+            <div class="container">Opacity(80%)</div>
+            </div>
+            <div class="polaroid">
             <img src="../Pictures/Kendrick.jpg" id="img19">
+            <div class="container">Opacity(50%)</div>
+            </div>
+            <div class="polaroid">
             <img src="../Pictures/Kendrick.jpg" id="img20">
+            <div class="container">Opacity(0.2)</div>
+            </div>
         </div>   
+        <div>
         <h2>CSS saturate() Function</h2>
-        <div>
+            <div class="polaroid">
             <img src="../Pictures/Kendrick.jpg">
+            <div class="container">Original Image</div>
+            </div>
+            <div class="polaroid">
             <img src="../Pictures/Kendrick.jpg" id="img21">
+            <div class="container">Saturate(0)</div>
+            </div>
+            <div class="polaroid">
             <img src="../Pictures/Kendrick.jpg" id="img22">
+            <div class="container">Saturate(100%)</div>
+            </div>
+            <div class="polaroid">
             <img src="../Pictures/Kendrick.jpg" id="img23">
-        </div>        
+            <div class="container">Saturate(200%)</div>
+            </div>
+        </div>  
+        <div>      
         <h2>CSS sepia() Function</h2>
-        <div>
+        <div class="polaroid">
             <img src="../Pictures/Kendrick.jpg">
+            <div class="container">Original Image</div>
+        </div>
+        <div class="polaroid">
             <img src="../Pictures/Kendrick.jpg" id="img24">
+            <div class="container">Sepia(1)</div>
+        </div>
+        <div class="polaroid">
             <img src="../Pictures/Kendrick.jpg" id="img25">
+            <div class="container">Sepia(60%)</div>
+        </div>
+        <div class="polaroid">
             <img src="../Pictures/Kendrick.jpg" id="img26">
+            <div class="container">Sepia(0.4)</div>
+        </div>
         </div>  
     </body>
 </html>
