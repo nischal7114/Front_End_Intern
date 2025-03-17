@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Image Shapes</title>
+        <style>
+            #div{
+                float: left;
+            }
+            #div1{
+                padding: 10px;
+            }
+            div.polaroid{
+                width:202px;
+                float: left;
+                padding: 10px;
+                background-color: rgba(163, 208, 235, 0.822);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                margin-right: 20px;
+                margin-bottom: 20px;
+            }
+            div.polaroid1{
+                width:75%;
+                float: left;
+                padding: 10px;
+                background-color: rgba(163, 208, 235, 0.822);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                margin-right: 20px;
+                margin-bottom: 20px;
+            }
+            div.container{
+                text-align:center;
+                padding: 5px 5px;
+            }
+            #img1{
+                clip-path: circle(50%);
+            }
+            #img2{
+                clip-path: circle(40%);
+            }
+            #img3{
+                clip-path: circle(60%);
+            }
+            #img4{
+                float: left;
+                clip-path: circle(45%);
+                shape-outside: circle(55%);
+            }
+            #img5{
+                clip-path: ellipse(50% 35%);
+            }
+            #img6{
+                clip-path: ellipse(40% 25%);
+            }
+            #img7{
+                clip-path: ellipse(40% 50%);
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>Testing Image Shapes by Nischal</h1>
+        <div id="div">
+        <h2>The circle() Function</h2>
+        <div class="polaroid">
+            <img src="../Pictures/Kendrick.jpg" alt="Kendrick Lamar" width="200" height="200">
+            <div class="container">Original Image</div>
+        </div>
+        <div id="div" class="polaroid">
+            <img id="img1" src="../Pictures/Kendrick.jpg" alt="Kendrick Lamar" width="200" height="200">
+            <div class="container">clip-path: circle(50%)</div>
+        </div>
+        <div  id="div" class="polaroid">
+            <img id="img2" src="../Pictures/Kendrick.jpg" alt="Kendrick Lamar" width="200" height="200">
+            <div class="container">clip-path: circle(40%)</div>
+        </div>
+        <div id="div" class="polaroid">
+            <img id="img3" src="../Pictures/Kendrick.jpg" alt="Kendrick Lamar" width="200" height="200">
+            <div class="container">clip-path: circle(60%)</div>
+        </div>
+        </div>
+        <div id="div">
+            <h2>Shape-outside and the circle() Function</h2>
+            <div class="polaroid1">
+                <img id="img4" src ="../Pictures/Kendrick.jpg" alt="Kendrick Lamar" width="200" height="200">
+                <p>Kendrick Lamar Duckworth (born June 17, 1987) is an American rapper. Regarded as one of the greatest rappers of all time, he was awarded the 2018 Pulitzer Prize for Music, becoming the first musician outside of the classical and jazz genres to receive the honor. Kendrick Lamar gave a captivating performance at the Super Bowl LIX halftime show in New Orleans on February 9. Fresh off his Grammy wins the week prior, the rapper made history as the first solo hip-hop artist to headline the Super Bowl as he played a medley of his popular songs at the Caesars Superdome.</p>
+            </div>
+        </div>
+        <div id="div">
+            <h2>The ellipse() Function</h2>
+            <div class="polaroid">
+                <img id="img5" src="../Pictures/Kendrick.jpg" height="200" width="200">
+                <div class="container">clip-path:ellipse(50% 35%)</div>
+            </div>
+            <div class="polaroid">
+                <img id="img6" src="../Pictures/Kendrick.jpg" height="200" width="200">
+                <div class="container">clip-path:ellipse(40% 25%)</div>
+            </div>
+            <div class="polaroid">
+                <img id="img7" src="../Pictures/Kendrick.jpg" height="200" width="200">
+                <div class="container">clip-path:ellipse(40% 50%)</div>
+            </div>
+        </div>
+    </body>
+</html>
