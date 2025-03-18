@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            CSS Pagination
+        </title>
+        <style>
+            /* Simple Pagination */
+            .pagination{
+                display: inline-block;
+            }
+            .pagination a{
+                color: rgb(136, 8, 8);
+                float: left;
+                padding: 8px 16px;
+                text-decoration: none;
+            }
+            /* Active and Hoverable Pagination*/
+            .pagination1{
+                display: inline-block;
+            }
+            .pagination1 a{
+                color: rgb(51, 7, 121);
+                float: left;
+                padding: 8px 16px;
+                text-decoration: none;
+                border-radius: 5px;
+                transition:  background-color 0.1s;
+            }
+            .pagination1 a.active{
+                background-color: rgb(76, 148, 3);
+                color: white;
+                border-radius: 5px;
+            }
+            .pagination1 a:hover:not(.active){
+                background-color: #ddd;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Testing CSS Pagination by Nischal</h1>
+        <h2>Simple Pagination</h2>
+        <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">&raquo;</a>
+        </div>
+        <h2>Active and Hoverable Pagination</h2>
+        <div class="pagination1">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a class="active" href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <a href="#">10</a>
+            <a href="#">&raquo;</a>
+        </div>
+    </body>
+</html>
