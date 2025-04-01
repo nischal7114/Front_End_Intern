@@ -54,3 +54,25 @@ console.log(person.address.city);
 const {firstName, address: {city}} = person;
 console.log(firstName);
 console.log(city);
+
+const me ={
+    name:"nischal",
+    age:30,
+    city:"Kathmandu"
+};
+
+console.log("My age is" + " " + age);
+
+let text = "";
+for(let x in me) {
+    text += me[x] + " ";
+};
+console.log(text);
+
+const arr=Object.values(me);
+console.log(arr);
+
+console.log("37" + 7);
+console.log(37+7);
+console.log(+"37")+(+"3");
+console.log(+"1.1") + (+"1.1");
