@@ -1,3 +1,4 @@
+//Practicing to pause the execution of JavaScript code for a specified duration
 console.log("start");
 function block_mainthread(time)
 {
@@ -9,3 +10,16 @@ function block_mainthread(time)
   }
   block_mainthread(5); // Block for 5 second
 console.log("End");
+
+
+//Practicing Exception Handling Statements
+try{
+    let result =b;
+    console.log("No Error");
+}
+catch (a){
+    console.error("An error occurred: ", a.message);
+    //we can also show the error in this way:
+    console.error("An error occurred: ",a);
+}
+console.log("Program continues");
