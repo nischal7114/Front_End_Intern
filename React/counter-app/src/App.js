@@ -23,7 +23,11 @@ function App() {
 
   // Function to increment the counter by 5
   const incrementByFive = () =>{
-    setCount2(count2 + 5);
+    setCount2(prev => prev +1);
+    setCount2(prev => prev +1);
+    setCount2(prev => prev +1);
+    setCount2(prev => prev +1);
+    setCount2(prev => prev +1);
   };
   
   // Function to decrement the counter by 5
@@ -37,8 +41,8 @@ function App() {
   }
 
   return (
-      <div className="App">
-      <div class ="left">
+      <div className="App" style={{display: 'flex', flexWrap:'wrap', gap:'1rem', alignItems:'center',justifyContent:'space-around'}}>
+      <div className ="left">
       <h2>Counter by One</h2>
       <p>Count: {count1}</p>
       <button onClick={increment}>Increment by 1</button>
@@ -46,7 +50,7 @@ function App() {
       <button onClick={reset}>Reset</button>
       </div>
 
-      <div class = "right">
+      <div className = "right">
       <h2>Counter by Five</h2>
       <p>Count : {count2}</p>
       <button onClick={incrementByFive}>Increment by 5</button>

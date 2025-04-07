@@ -29,7 +29,7 @@
 }
 
 .left{
-  position: absolute;
+  /* position: absolute; */
   top: 2rem;
   left: 2rem;
   border-radius: 35px;
@@ -46,7 +46,7 @@ button{
 }
 
 .right{
-  position: absolute;
+  /* position: absolute; */
   top: 2rem;
   right: 2rem;
   border-radius: 35px;
