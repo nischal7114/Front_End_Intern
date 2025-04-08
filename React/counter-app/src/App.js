@@ -23,8 +23,8 @@ function App() {
 
   // Function to increment the counter by 5
   const incrementByFive = () =>{
-    setCount2(prev => prev +1);
-    setCount2(prev => prev +1);
+    setCount2(prev => prev +1); //prev stores previous value
+    setCount2(prev => prev +1); //just keeping this method because the output is attainable through this way as well
     setCount2(prev => prev +1);
     setCount2(prev => prev +1);
     setCount2(prev => prev +1);
