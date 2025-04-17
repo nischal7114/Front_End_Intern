@@ -12,14 +12,14 @@ function block_mainthread(time)
 console.log("End");
 
 
-//Practicing Exception Handling Statements
-try{
-    let result =b;
-    console.log("No Error");
-}
-catch (a){
-    console.error("An error occurred: ", a.message);
-    //we can also show the error in this way:
-    console.error("An error occurred: ",a);
-}
-console.log("Program continues");
+// //Practicing Exception Handling Statements
+// try{
+//     let result =b;
+//     console.log("No Error");
+// }
+// catch (a){
+//     console.error("An error occurred: ", a.message);
+//     //we can also show the error in this way:
+//     console.error("An error occurred: ",a);
+// }
+// console.log("Program continues");
