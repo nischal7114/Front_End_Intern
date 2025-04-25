@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset = "UTF-8" />
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1.0" />
+    <title>Task Management Board</title>
+    <link rel = "stylesheet" href = "PMB_styles.css">
+  </head>
+<body>
+  <div class="title">
+  <h1>Project Management Board</h1>
+  </div>
+  <div class="add_group">
+    <button onclick="addGroup()"><h3>Add Group</h3></button>
+  </div>
+  <div class="boards">
+    <div class="boardlist" data-group-name = "To Do">
+      <div class = "caption">
+        <h2 class="title">To Do</h2>
+      </div>  
+      <button>Add Task</button>
+    </div>
+    <div class="boardlist" data-group-name = "Ongoing">
+      <div class = "caption">
+      <h2 class="title">Pending</h2>
+    </div>
+      <button>Add Task</button>
+    </div>
+    <div class="boardlist" data-group-name = "Completed">
+      <div class = "caption">
+      <h2 class="title">Staging</h2>
+    </div>
+      <button>Add Task</button>
+    </div>
+  </div>
+  <script src="PMB_script.js"></script>
+</body>
+</html>
