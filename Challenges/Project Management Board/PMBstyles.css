@@ -14,6 +14,7 @@ body {
 
 h1{
     font-size: 2.5rem;
+    text-align: center;
 }
 
 h1,
@@ -31,17 +32,22 @@ h2{
 
 .boards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    justify-content: space-around;
+    gap: 20px;
+    padding: 0 10px;
 }
 
 .boardlist {
     border: 1px solid ;
     border-radius: 10px;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 1.5rem;
-    padding-bottom: 1rem;
+    padding: 1.5rem;
+    min-width: 250px;
+    flex: 1 1 300px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .group_button {
@@ -54,6 +60,9 @@ h2{
     padding: 10px 50px;
     border-color: beige;
     cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+    max-width: 400px;
 }
 
 .group_button button:hover {
@@ -64,12 +73,17 @@ h2{
     border: 1px solid;
     border-radius: 10px;
     padding: 5px 45px;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 button.add {
-    display: inline-block;
-    padding: 5px 50px;
+    padding: 10px;
     font-size: 15px;
     font-weight: bold;
     text-align: center;
@@ -79,4 +93,33 @@ button.add {
     border-color: beige;
     border-radius: 10px;
     cursor: pointer;
+    width: 100%;
+}
+
+.task_button {
+    width: 100%;
+}
+
+.task_button button.add {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+} 
+
+button.add:hover {
+    background-color:beige;
+    color:#516395;
+}
+
+.task {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    position: relative;
+    word-wrap: break-word;
 }
