@@ -1,0 +1,5 @@
+#borderimg{
+    border: 20px solid transparent;
+    padding: 30px;
+    border-image: url("/Users/nischal.shrestha/Desktop/Nischal Shrestha/border.png") 30 round;
+}

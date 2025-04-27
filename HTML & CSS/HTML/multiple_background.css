@@ -1,0 +1,33 @@
+#background{
+    background-image: url("/Users/nischal.shrestha/Desktop/Nischal Shrestha/one_piece.png"), url("/Users/nischal.shrestha/Desktop/Nischal Shrestha/texture.jpg");
+    background-position:right bottom, left top;
+    background-size: 120px, 20%;
+    background-repeat: no-repeat, repeat;
+}
+h1{
+    text-shadow: 2px 2px 5px chocolate;
+}
+/* div{
+    width: 50%;
+    height: 25%;
+    padding: 15px;
+    background-color: cadetblue;
+    box-shadow: 5px 5px lightblue, 10px 10px lightcoral;
+} */
+ body{
+    background-color: beige;
+ }
+div.card{
+    width: 250px;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2), 0 6px 20 px 0 rgba(0,0,0,0.19);
+    text-align: center;
+}
+div.header{
+    background-color:cornflowerblue;
+    color: white;
+    padding: 10px;
+    font-size: 40px;
+}
+div.container{
+    padding: 10px;
+}
