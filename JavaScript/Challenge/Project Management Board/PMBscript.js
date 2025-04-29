@@ -29,8 +29,8 @@ function renderBoard() {
     const groups = loadBoardState();
     const boardsDiv = document.querySelector(".boards");
     boardsDiv.innerHTML = ""; // Clear current
-
     groups.forEach(group => {
+        
         const board = document.createElement("div");
         board.className = "boardlist";
         board.setAttribute("data-id", group.name);
@@ -55,14 +55,13 @@ function renderBoard() {
         addTaskBtn.onclick = () => addTask(group.name);
         taskBtnDiv.appendChild(addTaskBtn);
         board.appendChild(taskBtnDiv);
-
         boardsDiv.appendChild(board);
     });
 }
 
 // Utility: Create a task DOM element
 function createTaskElement(taskText, groupName) {
-    const taskDiv = document.createElement("div");
+    const taskDiv = document.createElement("div"); 
     taskDiv.className = "task";
     taskDiv.textContent = taskText;
     return taskDiv;
@@ -70,7 +69,8 @@ function createTaskElement(taskText, groupName) {
 
 // Add Task logic
 function addTask(groupName) {
-    const task = prompt("Enter task:");
+   
+     const task = prompt("Enter task:");
     if (task && task.trim()) {
         const groups = loadBoardState();
         const group = groups.find(g => g.name === groupName);
