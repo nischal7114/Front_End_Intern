@@ -17,3 +17,11 @@ console.log(name.concat(" ", lname, "is an intern at Techart Trekkies"));
 
 let wname = "  What's up?  ";
 console.log(wname.trim());
+
+let fr = "nischal"
+let add = "";
+for (let i = 0; i<fr.length; i++)
+{
+    add = add + fr[i];
+}
+console.log(add);
